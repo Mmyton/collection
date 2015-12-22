@@ -1,0 +1,26 @@
+<?php
+    $acq_AId=$_GET['acq_AId'];
+    $acq1=$_POST['acq1'];
+    $acq2=$_POST['acq2'];
+    $acq5=$_POST['acq5'];
+    $acq6=$_POST['acq6'];
+    $m=M('table_acquisition');
+    if($acq5==='温度'){
+        $data=1;
+    }elseif($acq5==='压力'){
+        $data=2;
+    }else{
+        $data=3;
+    }
+    $m->where('AId='.$acq_AId)->setField('MeasurandType',$data);
+    $m->where('AId='.$acq_AId)->setField('Illus',$acq6);
+    $where['Lo']=array('like','NULL');
+    $where['Num']=array('like','NULL');
+    $where['AId']=array('like',$acq_AId);
+    $search=$m->where($where)->find();
+    if(!$search){
+        $m->where('AId='.$acq_AId)->setField('Lo',$acq1);
+        $m->where('AId='.$acq_AId)->setField('Num',$acq2);
+    }
+    echo '<script>window.location.href="?s=BackForward/backforward/url/acqlist";</script>';
+?>

@@ -1,0 +1,35 @@
+<?php
+return array(
+	
+		'home_page' => '首&nbsp;&nbsp;页',
+		'company_profile' => '公司信息',
+		'profile' => '公司简介',
+		'produce' => '产品介绍',
+		'case_examples' => '施工案例',
+		'merchants' => '招商代理',
+		'means' => '资料中心',
+		'information_download' => '资料下载',
+		'VCR' => '视频中心',
+ 		'FAQ' =>'FAQ',
+ 		'FL'=>'友情链接',
+ 		'contact_us'=>'联系我们',
+		'companyculture'=>'企业文化',
+		'companyfuture'=>'企业发展',
+		'map'=>'路线地图',
+	    'board of directors'=>'公司成员',
+ 		'news'=>'公司动态',
+ 		'company_gk'=>'公司概况',
+ 		'owgzn'=>'硅藻君硅藻泥',
+ 		'owpaint'=>'硅藻君Paint',
+ 		'owgaina'=>'硅藻君GAINA',
+		'owqz'=>'硅藻君壁纸',
+		'owpw'=>'甲醛分解喷雾',
+		'tg'=>'推广案例',
+		'view'=>'展厅',
+		'pub'=>'大型公共场所',
+		'shop'=>'店铺',
+		'house'=>'住宅',
+		'zl'=>'专利证书',
+		'baogao'=>'检测报告'
+)
+?>
